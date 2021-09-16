@@ -39,4 +39,8 @@ public class Empleado {
     public String getApellido(){
         return this.apellido;
     }
+    
+    public void imprimirNombre(){
+        System.out.println("Nombre Completo del Empleado: " + this.nombre + " " + this.getApellido()+"\n");
+    }
 }

@@ -24,28 +24,25 @@ public class ExamenQA {
         
         System.out.println("Ingrese el nombre:");
         nombre = entrada.nextLine();
-        
         System.out.println("Ingrese el apellido:");
-        entrada = new Scanner(System.in);
         apellido = entrada.nextLine();
         
         Empleado nuevoEmpleado = new Empleado(nombre, apellido);
         
         System.out.println("Nombre: \n*" +nuevoEmpleado.getNombre()+ "\nApellido: \n*" + nuevoEmpleado.getApellido());
+        System.out.println("Tipo de turno: \n*" + nuevoEmpleado.tipoTurno());
+        nuevoEmpleado.imprimirNombre();
         
         System.out.println("Ingrese el nombre:");
         nombre = entrada.nextLine();
-        
         System.out.println("Ingrese el apellido:");
-        entrada = new Scanner(System.in);
         apellido = entrada.nextLine();
         
         EmpleadoNocturno empleadoNoche = new EmpleadoNocturno(nombre, apellido);
         
         System.out.println("Nombre: \n*" + empleadoNoche.getNombre()+ "\nApellido: \n*" + empleadoNoche.getApellido());
         System.out.println("Tipo de turno: \n*" + empleadoNoche.tipoTurno());
-        
-        
+        empleadoNoche.imprimirNombre();
     }
     
 }
